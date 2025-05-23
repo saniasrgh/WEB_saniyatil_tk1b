@@ -20,6 +20,18 @@ if(isset($_POST['submit'])){
     }
         */
     
+
+    //cek duplikat data nim atau email
+    $sql_check = "SELECT * from tabel_mahasiswa where nim='$nim' OR email='$email'";
+    $query_check = $koneksi->query($sql_check);
+    if ($query_check->num_rows > 0){
+        echo "<script>
+            alert('NIM atau email sudah terdaftar');
+            window.location.href = 'form_mhs.php'; 
+        </script>";
+        exit; 
+    }
+
     //insert data dengan statement prepare
     $sql = "INSERT INTO tabel_mahasiswa (nim,nama,email,alamat)
     VALUES (?, ?, ?, ?)";
