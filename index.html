@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML FORMS</title>
+		<meta name="author" content="Saniyatil Wada'i br Saragih">
+	</head>
+	
+	
+	<body>
+		<h2>HTML Forms</h2>
+		<form action="" method="GET">
+		<fieldset>
+		<legend>Formulir Pendaftaran</legend>
+		<table>
+		<tr>
+			<td>
+			<fieldset>
+			<table>Data Diri</table>
+			</td>
+			<td>
+			<table>Data Ortu</table>
+			</td>
+			</fieldset>
+		</tr>
+		</table>
+		<table>
+			<tr>
+				<td width="30%"><label for="id_nama">NAMA </label></td>
+				<td> : <input type="text" name="nama" id="id_nama" placeholder="Input Nama"required autofocus></td>
+			</tr>
+			<tr>
+				<td><label>NIM </label></td>
+				<td> : <input type="number" name="nim"></td>
+			</tr>
+			<tr>
+				<td><label>Password</label></td>
+				<td> : <input type="password" name="password"> </td>
+			</tr>
+			<tr>	
+				<td><label>Email </label></td>
+				<td> : <input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<td><label>Tanggal Lahir </label></td>
+				<td> : <input type="date" name="tanggal-lahir"> </td>
+			</tr>
+			<tr>
+				<td><label>Jenis Kelamin </label></td>
+				<td> : <input type="radio" name="jk" value="p"> Pria
+						<input type="radio" name="jk" value="w"> Wanita</td>
+				<!-- type == "radio" untuk dipilih salah satunya saja
+				value= harus berbeda-->
+			</tr>
+			<tr>
+				<td><label>Hobi </label></td>
+				<td> : <input type="checkbox"	name="hobi" value="Membaca"> Membaca
+						<input type="checkbox"	name="hobi" value="rebahan"> Rebahan
+						<input type="checkbox"	name="hobi" value="menonton"> Menonton</td>
+			</tr>
+			<tr>
+				<td><label>Pas foto </label></td>
+				<td> : <input type="file" name="foto" accept="image/*"></td>
+			</tr>
+			<tr>
+				<td><label>Prodi</label></td>
+				<td> : <select name ="prodi" required>
+					<option value="mi">Manajemen Informatika</option>
+					<option value="tkom">Teknik Komputer</option>
+					<option value="trpl">Teknologi Rekayasa Prangkat Lunak</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Alamat Lengkap</label></td>
+				<td valign="middle"> : <textarea name="alamat" rows="5" cols="30"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>Favorit Color </td>
+				<td> : <input type="color"></input></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="simpan"></td>
+			</tr>
+		
+		</table>
+		</fieldset>
+	</form>
+	</body>
+</html>
