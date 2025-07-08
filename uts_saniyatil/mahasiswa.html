@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Saniyatil Wadai Br Saragih">
+        <title>Form Mahasiswa</title>
+    </head>
+    <body>
+        <h1>Form Mahasiswa</h1>
+        <form action="" method="get">
+            <table cellpadding="5">
+                <tr>
+                    <td><label>Nama Lengkap</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="nama" required autofocus></td>
+                </tr>
+                <tr>
+                    <td><label>No BP</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="nobp"></td>
+                </tr>
+                <tr>
+                    <td><label>Tanggal Lahir</label></td>
+                    <td>:</td>
+                    <td><select name="tgl_lahir">
+                        <option value="">dd</option>
+                    </select>
+                    <select name="month">
+                        <option value="">MM</option>
+                    </select>
+                    <select name="year">
+                        <option value="">YY</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Jenis Kelamin</label></td>
+                    <td>:</td>
+                    <td><input type="radio" name="jk" value="l">Laki - Laki
+                    <input type="radio" name="jk" value="pr">Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Alamat</label></td>
+                    <td>:</td>
+                    <td><textarea name="alamat" rows="5" cols="30"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>Hobi</label></td>
+					<td>:</td>
+					<td><input type="checkbox" name="Hobi" value="olahraga">Olahraga
+					<input type="checkbox" name="Hobi" value="baca">Membaca
+					<input type="checkbox" name="Hobi" value="travelling">Travelling
+					</td>
+                </tr>
+                <tr colspan="3">
+                    <td><input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+            
+        </form>
+    </body>
+</html>
