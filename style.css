@@ -1,0 +1,32 @@
+body{
+    font-family: Lato;
+    font-size: 30px;
+}
+.header{
+    background-color: aquamarine;
+    font-weight: bold;
+    padding: 50px; 
+}
+.sidebar{
+    background-color: palevioletred;
+    font-weight: bold;
+    width: 20%;
+    height: 300px;
+    float: left;
+}
+.main{
+    background-color: blanchedalmond;
+    font-weight: bold;
+    width: 60%;
+    height: 300px;
+    float: left;
+}
+.footer{
+    background-color: rgb(103, 135, 193);
+    font-weight: bold;
+    padding: 50px;
+    clear: both;
+}
+.black-center{
+    text-align: center;
+}
